@@ -90,7 +90,7 @@ def dataset_from_args(args):
 
 class My_DATA(object):
     def __init__(self, args, file_path):
-        self.train_text, self.train_label, self.dev_text, self.dev_label, self.test_text, self.test_label = self.read_data(args, file_path)
+        self.read_data(args, file_path)
 
     def read_data(self, args, file_path):
         file_train = os.path.join(file_path, "train.tsv")
@@ -101,11 +101,15 @@ class My_DATA(object):
         train_labels = []
         with open(file_train, "r", encoding="utf-8-sig") as f:
             for i, line in enumerate(f):
-                if i == 0:
+                if i == 0:  # Skip header
                     continue
-                a = line.split('\t')
-                train_text.append(a[0][:-1])
-                train_labels.append(int(a[1][:-1]))
+                # Split only on first two commas to keep description intact
+                parts = line.split(',', 2)
+                if len(parts) == 3:
+                    label = int(parts[0])
+                    text = parts[2].strip()  # Get description and remove whitespace
+                    train_text.append(text)
+                    train_labels.append(label)
         
         eval_text = []
         eval_labels = []
@@ -113,27 +117,33 @@ class My_DATA(object):
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split('\t')
+                a = line.split(',')
                 eval_text.append(a[0][:-1])
                 eval_labels.append(int(a[1][:-1]))
 
         test_text = []
         test_labels = []
+        examples = []
         with open(file_test, "r", encoding="utf-8-sig") as f:
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split('\t')
+                a = line.split(',')
                 test_text.append(a[0][:-1])
                 test_labels.append(int(a[1][:-1]))
+                examples.append({'label': int(a[1][:-1]), 'text': a[0][:-1]})
 
         print('train num: {}'.format(len(train_labels)))
         print('dev num: {}'.format(len(eval_labels)))
         print('test num: {}'.format(len(test_labels)))
 
-        self.wordvocab = self.build_vocab(args, train_text)
+        self.train_text, self.train_labels, self.eval_text, self.eval_labels, self.test_text, self.test_labels = train_text, train_labels, \
+            eval_text, eval_labels, test_text, test_labels
 
-        return train_text, train_labels, eval_text, eval_labels, test_text, test_labels
+        self.examples = examples
+        self.label_names = [str(i) for i in set(eval_labels)]
+
+        self.wordvocab = self.build_vocab(args, train_text)
 
     
     def preprocess(self, s):
