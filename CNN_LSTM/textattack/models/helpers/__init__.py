@@ -17,6 +17,3 @@ from .my_lstm import MyLSTM
 from .my_lstm_vmask import MyLSTMVmask
 from .my_cnn import MyCNN
 from .my_cnn_vmask import MyCNNVmask
-from .my_cnn_group import MyCNNGroup
-from .my_lr import LogisticRegression
-from .my_lr_vmask import MyLRVmask

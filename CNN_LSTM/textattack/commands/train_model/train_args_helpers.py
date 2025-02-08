@@ -117,9 +117,12 @@ class My_DATA(object):
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split(',')
-                eval_text.append(a[0][:-1])
-                eval_labels.append(int(a[1][:-1]))
+                parts = line.split(',', 2)
+                if len(parts) == 3:
+                    label = int(parts[0])
+                    text = parts[2].strip()  # Get description and remove whitespace
+                    eval_text.append(text)
+                    eval_labels.append(label)
 
         test_text = []
         test_labels = []
@@ -128,17 +131,24 @@ class My_DATA(object):
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split(',')
-                test_text.append(a[0][:-1])
-                test_labels.append(int(a[1][:-1]))
-                examples.append({'label': int(a[1][:-1]), 'text': a[0][:-1]})
+                parts = line.split(',', 2)
+                if len(parts) == 3:
+                    label = int(parts[0])
+                    text = parts[2].strip()  # Get description and remove whitespace
+                    test_text.append(text)
+                    test_labels.append(label)
+                examples.append({'label': label, 'text': text})
 
         print('train num: {}'.format(len(train_labels)))
         print('dev num: {}'.format(len(eval_labels)))
         print('test num: {}'.format(len(test_labels)))
 
-        self.train_text, self.train_labels, self.eval_text, self.eval_labels, self.test_text, self.test_labels = train_text, train_labels, \
-            eval_text, eval_labels, test_text, test_labels
+        self.train_text = train_text
+        self.train_label = train_labels
+        self.dev_text = eval_text
+        self.dev_label = eval_labels
+        self.test_text = test_text
+        self.test_label = test_labels
 
         self.examples = examples
         self.label_names = [str(i) for i in set(eval_labels)]
