@@ -106,8 +106,9 @@ class My_DATA(object):
                 # Split only on first two commas to keep description intact
                 parts = line.split(',', 2)
                 if len(parts) == 3:
-                    label = int(parts[0])
-                    text = parts[2].strip()  # Get description and remove whitespace
+                    # Convert label to 0-based indexing by subtracting 1
+                    label = int(parts[0]) - 1
+                    text = parts[2].strip()
                     train_text.append(text)
                     train_labels.append(label)
         
@@ -119,8 +120,9 @@ class My_DATA(object):
                     continue
                 parts = line.split(',', 2)
                 if len(parts) == 3:
-                    label = int(parts[0])
-                    text = parts[2].strip()  # Get description and remove whitespace
+                    # Convert label to 0-based indexing by subtracting 1
+                    label = int(parts[0]) - 1
+                    text = parts[2].strip()
                     eval_text.append(text)
                     eval_labels.append(label)
 
