@@ -1,0 +1,53 @@
+Writing logs to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyCNN
+Wrote original training args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/train_args.json.
+***** Running training *****
+	Num examples = 114000
+	Batch size = 64
+	Max sequence length = 512
+	Num steps = 17810
+	Num epochs = 10
+	Learning rate = 0.01
+Train accuracy: 82.5359649122807%
+Eval accuracy: 84.08333333333333%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/train_args.json
+Best eval acc: 0.8408333333333333
+Train accuracy: 83.26929824561404%
+Eval accuracy: 81.83333333333334%
+Best eval acc: 0.8408333333333333
+Train accuracy: 83.60087719298247%
+Eval accuracy: 85.81666666666666%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/train_args.json
+Best eval acc: 0.8581666666666666
+Train accuracy: 83.53333333333333%
+Eval accuracy: 85.3%
+Best eval acc: 0.8581666666666666
+Train accuracy: 83.9780701754386%
+Eval accuracy: 86.01666666666667%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/train_args.json
+Best eval acc: 0.8601666666666666
+Train accuracy: 83.95614035087719%
+Eval accuracy: 83.86666666666667%
+Best eval acc: 0.8601666666666666
+Train accuracy: 84.50877192982456%
+Eval accuracy: 84.8%
+Best eval acc: 0.8601666666666666
+Train accuracy: 84.07192982456141%
+Eval accuracy: 83.5%
+Best eval acc: 0.8601666666666666
+Train accuracy: 84.06666666666666%
+Eval accuracy: 81.75%
+Best eval acc: 0.8601666666666666
+Train accuracy: 84.33684210526316%
+Eval accuracy: 84.51666666666667%
+Best eval acc: 0.8601666666666666
+Finished training. Re-loading and evaluating model from disk.
+Loading model: MyCNN
+Test accuracy accuracy: 85.84210526315789%
+Skipping tokenizer save - custom tokenizer Tokenizer(vocabulary_size=60955, model=WordLevel, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], lowercase=True, unicode_normalizer=None) doesn't support save_pretrained()
+Wrote README to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/README.md.
+Wrote final training args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-base-/train_args.json.

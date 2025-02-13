@@ -1,0 +1,113 @@
+Writing logs to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyCNN
+Wrote original training args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json.
+***** Running training *****
+	Num examples = 114000
+	Batch size = 64
+	Max sequence length = 512
+	Num steps = 53430
+	Num epochs = 30
+	Learning rate = 0.01
+Running clean epoch 1/10
+Train accuracy: 82.5359649122807%
+Running clean epoch 2/10
+Train accuracy: 83.67456140350878%
+Running clean epoch 3/10
+Train accuracy: 84.42105263157896%
+Running clean epoch 4/10
+Train accuracy: 84.27894736842106%
+Running clean epoch 5/10
+Train accuracy: 83.1842105263158%
+Running clean epoch 6/10
+Train accuracy: 84.03947368421053%
+Running clean epoch 7/10
+Train accuracy: 84.0219298245614%
+Running clean epoch 8/10
+Train accuracy: 83.80438596491227%
+Running clean epoch 9/10
+Train accuracy: 83.61228070175439%
+Running clean epoch 10/10
+Train accuracy: 84.79385964912281%
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_cnn.MyCNN'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 81.68790322580645%
+Eval accuracy: 75.61666666666666%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json
+Best eval acc: 0.7561666666666667
+Train accuracy: 81.78467741935484%
+Eval accuracy: 78.23333333333333%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json
+Best eval acc: 0.7823333333333333
+Train accuracy: 82.80483870967743%
+Eval accuracy: 85.26666666666667%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json
+Best eval acc: 0.8526666666666667
+Train accuracy: 83.24112903225807%
+Eval accuracy: 83.46666666666667%
+Best eval acc: 0.8526666666666667
+Train accuracy: 84.74677419354839%
+Eval accuracy: 85.28333333333333%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json
+Best eval acc: 0.8528333333333333
+Train accuracy: 84.18870967741935%
+Eval accuracy: 84.66666666666667%
+Best eval acc: 0.8528333333333333
+Train accuracy: 83.47258064516129%
+Eval accuracy: 80.53333333333333%
+Best eval acc: 0.8528333333333333
+Train accuracy: 83.13306451612902%
+Eval accuracy: 83.18333333333334%
+Best eval acc: 0.8528333333333333
+Train accuracy: 84.32096774193548%
+Eval accuracy: 84.11666666666666%
+Best eval acc: 0.8528333333333333
+Train accuracy: 83.56854838709677%
+Eval accuracy: 81.89999999999999%
+Best eval acc: 0.8528333333333333
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_cnn.MyCNN'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 82.75725806451612%
+Eval accuracy: 85.81666666666666%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json
+Best eval acc: 0.8581666666666666
+Train accuracy: 82.97419354838709%
+Eval accuracy: 82.55%
+Best eval acc: 0.8581666666666666
+Train accuracy: 84.63629032258065%
+Eval accuracy: 85.6%
+Best eval acc: 0.8581666666666666
+Train accuracy: 82.77822580645162%
+Eval accuracy: 85.86666666666667%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json
+Best eval acc: 0.8586666666666667
+Train accuracy: 83.31209677419355%
+Eval accuracy: 83.23333333333333%
+Best eval acc: 0.8586666666666667
+Train accuracy: 83.76612903225806%
+Eval accuracy: 83.11666666666667%
+Best eval acc: 0.8586666666666667
+Train accuracy: 84.16451612903226%
+Eval accuracy: 85.73333333333333%
+Best eval acc: 0.8586666666666667
+Train accuracy: 83.50806451612904%
+Eval accuracy: 84.6%
+Best eval acc: 0.8586666666666667
+Train accuracy: 84.31693548387096%
+Eval accuracy: 82.26666666666667%
+Best eval acc: 0.8586666666666667
+Train accuracy: 83.02016129032258%
+Eval accuracy: 85.13333333333334%
+Best eval acc: 0.8586666666666667
+Finished training. Re-loading and evaluating model from disk.
+Loading model: MyCNN
+Test accuracy accuracy: 85.59210526315789%
+Skipping tokenizer save - custom tokenizer Tokenizer(vocabulary_size=60955, model=WordLevel, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], lowercase=True, unicode_normalizer=None) doesn't support save_pretrained()
+Wrote README to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/README.md.
+Wrote final training args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn-ag-adv-/train_args.json.

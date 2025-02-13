@@ -1,0 +1,17 @@
+
+[Succeeded / Failed / Total] 2231 / 4274 / 7600: 100%|██████████████████████████████████████████████████████████████████████████████████████| 7600/7600 [1:0[Succeeded / Failed / Total] 2231 / 4274 / 7600: 100%|██████████████████████████████████████████████████████████████████████████████████████| 7600/7600 [1:02:02<00:00,  2.04it/s]
+
++-------------------------------+--------+
+| Attack Results                |        |
++-------------------------------+--------+
+| Number of successful attacks: | 2231   |
+| Number of failed attacks:     | 4274   |
+| Number of skipped attacks:    | 1095   |
+| Original accuracy:            | 85.59% |
+| Accuracy under attack:        | 56.24% |
+| Attack success rate:          | 34.3%  |
+| Average perturbed word %:     | 3.63%  |
+| Average num. words per input: | 32.18  |
+| Avg num queries:              | 378.25 |
++-------------------------------+--------+
+textattack: Attack time: 3722.0710411071777s
