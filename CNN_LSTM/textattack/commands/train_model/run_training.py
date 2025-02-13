@@ -502,6 +502,9 @@ def train_model(args):
     args.best_eval_score_epoch = 0
     args.epochs_since_best_eval_score = 0
 
+    # Initialize replace_freq as a tensor at the start
+    replace_freq = torch.zeros(len(my_data.wordvocab), device=args.device)
+
     def loss_backward(loss):
         if num_gpus > 1:
             loss = loss.mean()  # mean() to average on multi-gpu parallel training
@@ -557,7 +560,12 @@ def train_model(args):
                         )
                         adv_train_text = [r.perturbed_text() for r in adv_attack_results]
                         temp_replace_freq = count_rep(adv_train_text[:args.attack_num], train_text1[:args.attack_num], tokenizer, len(my_data.wordvocab))
-                        replace_freq += temp_replace_freq
+                        # Convert temp_replace_freq to tensor if it's not already
+                        if isinstance(temp_replace_freq, np.ndarray):
+                            temp_replace_freq = torch.tensor(temp_replace_freq, device=args.device)
+                        elif torch.is_tensor(temp_replace_freq) and temp_replace_freq.device != args.device:
+                            temp_replace_freq = temp_replace_freq.to(args.device)
+                        replace_freq += temp_replace_freq  # Now both are tensors on the same device
                         train_text_temp = train_text + train_text1[:args.attack_num]
                         adv_train_text_temp = train_text + adv_train_text
                         train_labels_temp = train_labels + train_labels1[:args.attack_num]

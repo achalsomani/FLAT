@@ -455,9 +455,12 @@ class My_DATA(object):
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split('\t')
-                train_text.append(a[0][:-1])
-                train_labels.append(int(a[1][:-1]))
+                parts = line.split(',', 2)
+                if len(parts) == 3:
+                    label = int(parts[0]) - 1
+                    text = parts[2].strip()
+                    train_text.append(text)
+                    train_labels.append(label)
         
         eval_text = []
         eval_labels = []
@@ -465,9 +468,12 @@ class My_DATA(object):
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split('\t')
-                eval_text.append(a[0][:-1])
-                eval_labels.append(int(a[1][:-1]))
+                parts = line.split(',', 2)
+                if len(parts) == 3:
+                    label = int(parts[0]) - 1
+                    text = parts[2].strip()
+                    eval_text.append(text)
+                    eval_labels.append(label)
 
         test_text = []
         test_labels = []
@@ -476,10 +482,13 @@ class My_DATA(object):
             for i, line in enumerate(f):
                 if i == 0:
                     continue
-                a = line.split('\t')
-                test_text.append(a[0][:-1])
-                test_labels.append(int(a[1][:-1]))
-                examples.append({'label': int(a[1][:-1]), 'text': a[0][:-1]})
+                parts = line.split(',', 2)
+                if len(parts) == 3:
+                    label = int(parts[0]) - 1
+                    text = parts[2].strip()
+                    test_text.append(text)
+                    test_labels.append(label)
+                    examples.append({'label': label, 'text': text})
 
         print('train num: {}'.format(len(train_labels)))
         print('dev num: {}'.format(len(eval_labels)))

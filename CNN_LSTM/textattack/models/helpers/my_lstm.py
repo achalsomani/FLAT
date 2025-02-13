@@ -32,7 +32,7 @@ class MyLSTM(nn.Module):
 
 		# initialize word embedding with pretrained word2vec
         emb_matrix = self.getVectors(embed_dim, wordvocab)
-        self.embed.weight.data.copy_(torch.from_numpy(emb_matrix))
+        self.embed.weight.data.copy_(torch.from_numpy(emb_matrix[:-1]))
 
 		# fix embedding
         if not emb_layer_trainable:
@@ -71,16 +71,19 @@ class MyLSTM(nn.Module):
         
         
     def getVectors(self, embed_dim, wordvocab):
-        vectors = []
-        word2vec = KeyedVectors.load_word2vec_format('./GoogleNews-vectors-negative300.bin', binary=True)
-        for i in range(len(wordvocab)):
-            word = wordvocab[i]
-            if word in word2vec.vocab:
-                vectors.append(word2vec[word])
-            else:
-                vectors.append(np.random.uniform(-0.01, 0.01, embed_dim))
-
-        return np.array(vectors)
+        word2vec = KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
+        
+        vocab_size = len(wordvocab)
+        emb_matrix = np.zeros((vocab_size + 1, embed_dim))
+        
+        for idx, word in enumerate(wordvocab):
+            try:
+                if word in word2vec.key_to_index:
+                    emb_matrix[idx] = word2vec[word]
+            except KeyError:
+                continue
+            
+        return emb_matrix
         
         
     def forward(self, batch, do_explain=False, explainer=None):

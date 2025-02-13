@@ -135,8 +135,8 @@ class My_DATA(object):
                     continue
                 parts = line.split(',', 2)
                 if len(parts) == 3:
-                    label = int(parts[0])
-                    text = parts[2].strip()  # Get description and remove whitespace
+                    label = int(parts[0]) - 1
+                    text = parts[2].strip()  
                     test_text.append(text)
                     test_labels.append(label)
                 examples.append({'label': label, 'text': text})

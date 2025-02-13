@@ -97,11 +97,14 @@ class CNN(nn.Module):
 		word2vec = KeyedVectors.load_word2vec_format('./GoogleNews-vectors-negative300.bin', binary=True)
 		for i in range(len(wordvocab)):
 			word = wordvocab[i]
-			if word in word2vec.vocab:
-				vectors.append(word2vec[word])
-			else:
+			try:
+				if word in word2vec.key_to_index:
+					vectors.append(word2vec[word])
+				else:
+					vectors.append(np.random.uniform(-0.01, 0.01, embed_dim))
+			except KeyError:
 				vectors.append(np.random.uniform(-0.01, 0.01, embed_dim))
-				
+
 		return np.array(vectors)
 		
 		
