@@ -1,0 +1,21 @@
+"EBay plans to buy the apartment and home rental service Rent.com for \$415 million, adding to its already exhaustive breadth of offerings."
+
+"EBay plans to obtain the apartment and home rental service Rent.com for \$415 million, adding to its already exhaustive breadth of offerings."
+
+
+[Succeeded / Failed / Total] 4050 / 2681 / 7600: 100%|██████████████████████████████████████| 7600/7600 [1:09:19<00:00,  1.83it/s]
+
++-------------------------------+--------+
+| Attack Results                |        |
++-------------------------------+--------+
+| Number of successful attacks: | 4050   |
+| Number of failed attacks:     | 2681   |
+| Number of skipped attacks:    | 869    |
+| Original accuracy:            | 88.57% |
+| Accuracy under attack:        | 35.28% |
+| Attack success rate:          | 60.17% |
+| Average perturbed word %:     | 8.37%  |
+| Average num. words per input: | 32.18  |
+| Avg num queries:              | 288.32 |
++-------------------------------+--------+
+textattack: Attack time: 4159.796914577484s

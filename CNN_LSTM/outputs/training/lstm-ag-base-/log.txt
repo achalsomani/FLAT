@@ -1,0 +1,61 @@
+Writing logs to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyLSTM
+Writing logs to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyLSTM
+Writing logs to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyLSTM
+Wrote original training args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/train_args.json.
+***** Running training *****
+	Num examples = 120000
+	Batch size = 64
+	Max sequence length = 512
+	Num steps = 18750
+	Num epochs = 10
+	Learning rate = 0.01
+Train accuracy: 85.5875%
+Eval accuracy: 86.30952380952381%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/train_args.json
+Best eval acc: 0.8630952380952381
+Train accuracy: 87.9325%
+Eval accuracy: 88.09523809523809%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/train_args.json
+Best eval acc: 0.8809523809523809
+Train accuracy: 88.44666666666666%
+Eval accuracy: 87.5%
+Best eval acc: 0.8809523809523809
+Train accuracy: 88.55333333333333%
+Eval accuracy: 88.09523809523809%
+Best eval acc: 0.8809523809523809
+Train accuracy: 88.70416666666667%
+Eval accuracy: 88.69047619047619%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/train_args.json
+Best eval acc: 0.8869047619047619
+Train accuracy: 88.3975%
+Eval accuracy: 86.30952380952381%
+Best eval acc: 0.8869047619047619
+Train accuracy: 88.70916666666666%
+Eval accuracy: 88.09523809523809%
+Best eval acc: 0.8869047619047619
+Train accuracy: 88.54416666666667%
+Eval accuracy: 87.5%
+Best eval acc: 0.8869047619047619
+Train accuracy: 88.685%
+Eval accuracy: 89.28571428571429%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/train_args.json
+Best eval acc: 0.8928571428571429
+Train accuracy: 82.75583333333333%
+Eval accuracy: 82.73809523809523%
+Best eval acc: 0.8928571428571429
+Finished training. Re-loading and evaluating model from disk.
+Loading model: MyLSTM
+Test accuracy accuracy: 88.5657894736842%
+Error: could not save tokenizer Tokenizer(vocabulary_size=62111, model=WordLevel, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], lowercase=True, unicode_normalizer=None) to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/.
+Wrote README to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/README.md.
+Wrote final training args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-base-/train_args.json.
