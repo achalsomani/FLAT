@@ -1,0 +1,227 @@
+Writing logs to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyLSTM
+Wrote original training args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json.
+***** Running training *****
+	Num examples = 120000
+	Batch size = 64
+	Max sequence length = 512
+	Num steps = 56250
+	Num epochs = 30
+	Learning rate = 0.01
+Running clean epoch 1/10
+Train accuracy: 85.5875%
+Running clean epoch 2/10
+Train accuracy: 87.89416666666666%
+Running clean epoch 3/10
+Train accuracy: 88.48083333333334%
+Running clean epoch 4/10
+Train accuracy: 88.59416666666667%
+Running clean epoch 5/10
+Train accuracy: 88.76666666666667%
+Running clean epoch 6/10
+Train accuracy: 88.63833333333334%
+Running clean epoch 7/10
+Train accuracy: 87.22166666666666%
+Running clean epoch 8/10
+Train accuracy: 87.97749999999999%
+Running clean epoch 9/10
+Train accuracy: 88.26166666666667%
+Running clean epoch 10/10
+Train accuracy: 88.28916666666666%
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_lstm.MyLSTM'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 82.0823076923077%
+Eval accuracy: 79.76190476190477%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.7976190476190477
+Train accuracy: 70.45076923076923%
+Eval accuracy: 77.97619047619048%
+Best eval acc: 0.7976190476190477
+Train accuracy: 72.70538461538462%
+Eval accuracy: 79.76190476190477%
+Best eval acc: 0.7976190476190477
+Train accuracy: 71.3276923076923%
+Eval accuracy: 76.19047619047619%
+Best eval acc: 0.7976190476190477
+Train accuracy: 68.4053846153846%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Train accuracy: 68.88153846153845%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Train accuracy: 69.18846153846154%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Train accuracy: 70.55384615384615%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Train accuracy: 70.89076923076924%
+Eval accuracy: 73.80952380952381%
+Best eval acc: 0.7976190476190477
+Train accuracy: 71.05538461538463%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_lstm.MyLSTM'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Writing logs to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyLSTM
+Wrote original training args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json.
+***** Running training *****
+	Num examples = 120000
+	Batch size = 64
+	Max sequence length = 512
+	Num steps = 56250
+	Num epochs = 30
+	Learning rate = 0.01
+Running clean epoch 1/10
+Train accuracy: 85.5875%
+Running clean epoch 2/10
+Train accuracy: 87.89416666666666%
+Running clean epoch 3/10
+Train accuracy: 88.48083333333334%
+Running clean epoch 4/10
+Train accuracy: 88.59416666666667%
+Running clean epoch 5/10
+Train accuracy: 88.76666666666667%
+Running clean epoch 6/10
+Train accuracy: 88.63833333333334%
+Running clean epoch 7/10
+Train accuracy: 87.22166666666666%
+Running clean epoch 8/10
+Train accuracy: 87.97749999999999%
+Running clean epoch 9/10
+Train accuracy: 88.26166666666667%
+Running clean epoch 10/10
+Train accuracy: 88.28916666666666%
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_lstm.MyLSTM'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 82.0823076923077%
+Eval accuracy: 79.76190476190477%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.7976190476190477
+Train accuracy: 70.45076923076923%
+Eval accuracy: 77.97619047619048%
+Best eval acc: 0.7976190476190477
+Train accuracy: 72.70538461538462%
+Eval accuracy: 79.76190476190477%
+Best eval acc: 0.7976190476190477
+Train accuracy: 71.3276923076923%
+Eval accuracy: 76.19047619047619%
+Best eval acc: 0.7976190476190477
+Train accuracy: 68.4053846153846%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Train accuracy: 68.88153846153845%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Train accuracy: 69.18846153846154%
+Eval accuracy: 74.40476190476191%
+Best eval acc: 0.7976190476190477
+Writing logs to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyLSTM
+Train accuracy: 85.35166666666667%
+Running clean epoch 2/10
+Train accuracy: 88.13583333333334%
+Running clean epoch 3/10
+Train accuracy: 88.47916666666666%
+Running clean epoch 4/10
+Train accuracy: 88.60083333333333%
+Running clean epoch 5/10
+Train accuracy: 88.93916666666667%
+Running clean epoch 6/10
+Train accuracy: 86.31833333333333%
+Running clean epoch 7/10
+Train accuracy: 87.2625%
+Running clean epoch 8/10
+Train accuracy: 87.74666666666666%
+Running clean epoch 9/10
+Train accuracy: 88.17833333333334%
+Running clean epoch 10/10
+Train accuracy: 80.67916666666667%
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_lstm.MyLSTM'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 74.21615384615384%
+Eval accuracy: 76.78571428571429%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.7678571428571429
+Train accuracy: 74.35923076923076%
+Eval accuracy: 73.80952380952381%
+Best eval acc: 0.7678571428571429
+Train accuracy: 73.34307692307692%
+Eval accuracy: 76.78571428571429%
+Best eval acc: 0.7678571428571429
+Train accuracy: 75.68230769230769%
+Eval accuracy: 79.76190476190477%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.7976190476190477
+Train accuracy: 76.66307692307693%
+Eval accuracy: 79.16666666666666%
+Best eval acc: 0.7976190476190477
+Train accuracy: 77.6376923076923%
+Eval accuracy: 80.35714285714286%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.8035714285714286
+Train accuracy: 77.68615384615384%
+Eval accuracy: 82.73809523809523%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.8273809523809523
+Train accuracy: 79.77692307692308%
+Eval accuracy: 83.33333333333334%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.8333333333333334
+Train accuracy: 81.58538461538461%
+Eval accuracy: 85.71428571428571%
+Best acc found. Saved model to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Saved updated args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json
+Best eval acc: 0.8571428571428571
+Train accuracy: 82.17615384615384%
+Eval accuracy: 84.52380952380952%
+Best eval acc: 0.8571428571428571
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_lstm.MyLSTM'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 65.05384615384615%
+Eval accuracy: 76.78571428571429%
+Best eval acc: 0.8571428571428571
+Train accuracy: 66.73230769230769%
+Eval accuracy: 77.38095238095238%
+Best eval acc: 0.8571428571428571
+Train accuracy: 68.80153846153846%
+Eval accuracy: 77.38095238095238%
+Best eval acc: 0.8571428571428571
+Train accuracy: 69.66461538461537%
+Eval accuracy: 81.54761904761905%
+Best eval acc: 0.8571428571428571
+Train accuracy: 70.08538461538461%
+Eval accuracy: 79.16666666666666%
+Best eval acc: 0.8571428571428571
+Train accuracy: 69.84923076923077%
+Eval accuracy: 76.78571428571429%
+Best eval acc: 0.8571428571428571
+Train accuracy: 71.01307692307692%
+Eval accuracy: 81.54761904761905%
+Best eval acc: 0.8571428571428571
+Train accuracy: 73.74076923076923%
+Eval accuracy: 82.14285714285714%
+Best eval acc: 0.8571428571428571
+Train accuracy: 73.5823076923077%
+Eval accuracy: 78.57142857142857%
+Best eval acc: 0.8571428571428571
+Train accuracy: 72.15615384615384%
+Eval accuracy: 82.14285714285714%
+Best eval acc: 0.8571428571428571
+Finished training. Re-loading and evaluating model from disk.
+Loading model: MyLSTM
+Test accuracy accuracy: 83.85526315789474%
+Error: could not save tokenizer Tokenizer(vocabulary_size=62111, model=WordLevel, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], lowercase=True, unicode_normalizer=None) to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/.
+Wrote README to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/README.md.
+Wrote final training args to /WAVE/users2/unix/asomani/my_proj/flat2/CNN_LSTM/outputs/training/lstm-ag-adv-/train_args.json.
