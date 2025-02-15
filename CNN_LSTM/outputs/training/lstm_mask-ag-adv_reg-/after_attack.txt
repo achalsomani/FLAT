@@ -1,0 +1,24 @@
+[Succeeded / Failed / Total] 3043 / 3732 / 7599: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 7599/7600 [33:52<00:00,  3.74it/s]--------------------------------------------- Result 7600 ---------------------------------------------
+2 (100%) --> 3 (100%)
+
+"EBay plans to buy the apartment and home rental service Rent.com for \$415 million, adding to its already exhaustive breadth of offerings."
+
+"EBay plans to buy the apartment and home tenancy service Rent.com for \$415 million, adding to its already exhaustive bandwidth of offerings."
+
+
+[Succeeded / Failed / Total] 3044 / 3732 / 7600: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7600/7600 [33:52<00:00,  3.74it/s]
+
++-------------------------------+--------+
+| Attack Results                |        |
++-------------------------------+--------+
+| Number of successful attacks: | 3044   |
+| Number of failed attacks:     | 3732   |
+| Number of skipped attacks:    | 824    |
+| Original accuracy:            | 89.16% |
+| Accuracy under attack:        | 49.11% |
+| Attack success rate:          | 44.92% |
+| Average perturbed word %:     | 8.28%  |
+| Average num. words per input: | 32.18  |
+| Avg num queries:              | 340.87 |
++-------------------------------+--------+
+textattack: Attack time: 2032.127648115158s

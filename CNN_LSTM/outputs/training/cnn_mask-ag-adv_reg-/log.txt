@@ -1,0 +1,114 @@
+Writing logs to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyCNN_VMASK
+Writing logs to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/log.txt.
+Loaded dataset. Found: 4 labels: [0, 1, 2, 3]
+Loading model: MyCNN_VMASK
+Wrote original training args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json.
+***** Running training *****
+	Num examples = 114000
+	Batch size = 64
+	Max sequence length = 512
+	Num steps = 53430
+	Num epochs = 30
+	Learning rate = 0.005
+Running clean epoch 1/10
+Train accuracy: 84.04649122807018%
+Running clean epoch 2/10
+Train accuracy: 81.26842105263158%
+Running clean epoch 3/10
+Train accuracy: 84.16666666666667%
+Running clean epoch 4/10
+Train accuracy: 84.76140350877192%
+Running clean epoch 5/10
+Train accuracy: 84.19035087719298%
+Running clean epoch 6/10
+Train accuracy: 85.11842105263158%
+Running clean epoch 7/10
+Train accuracy: 85.2798245614035%
+Running clean epoch 8/10
+Train accuracy: 85.43245614035088%
+Running clean epoch 9/10
+Train accuracy: 86.50614035087719%
+Running clean epoch 10/10
+Train accuracy: 86.70438596491228%
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_cnn_vmask.MyCNNVmask'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 85.63709677419354%
+Eval accuracy: 86.83333333333333%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json
+Best eval acc: 0.8683333333333333
+Train accuracy: 85.89677419354838%
+Eval accuracy: 87.28333333333333%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json
+Best eval acc: 0.8728333333333333
+Train accuracy: 85.9266129032258%
+Eval accuracy: 85.13333333333334%
+Best eval acc: 0.8728333333333333
+Train accuracy: 86.19435483870967%
+Eval accuracy: 85.25%
+Best eval acc: 0.8728333333333333
+Train accuracy: 86.17177419354839%
+Eval accuracy: 86.48333333333333%
+Best eval acc: 0.8728333333333333
+Train accuracy: 86.55967741935484%
+Eval accuracy: 86.25%
+Best eval acc: 0.8728333333333333
+Train accuracy: 86.38790322580645%
+Eval accuracy: 87.36666666666667%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json
+Best eval acc: 0.8736666666666667
+Train accuracy: 85.78951612903226%
+Eval accuracy: 87.13333333333333%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.01532258064516%
+Eval accuracy: 85.98333333333333%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.17903225806451%
+Eval accuracy: 85.65%
+Best eval acc: 0.8736666666666667
+Attacking model to generate new training set...
+Unknown if model of class <class 'textattack.models.helpers.my_cnn_vmask.MyCNNVmask'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+Train accuracy: 86.69677419354839%
+Eval accuracy: 85.68333333333334%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.41612903225806%
+Eval accuracy: 86.71666666666667%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.4483870967742%
+Eval accuracy: 86.48333333333333%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.13629032258065%
+Eval accuracy: 86.8%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.84919354838709%
+Eval accuracy: 86.61666666666666%
+Best eval acc: 0.8736666666666667
+Train accuracy: 86.73548387096774%
+Eval accuracy: 87.41666666666667%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json
+Best eval acc: 0.8741666666666666
+Train accuracy: 86.88467741935484%
+Eval accuracy: 86.8%
+Best eval acc: 0.8741666666666666
+Train accuracy: 86.77258064516128%
+Eval accuracy: 87.56666666666668%
+Best acc found. Saved model to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/.
+Saved updated args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json
+Best eval acc: 0.8756666666666667
+Train accuracy: 86.83306451612903%
+Eval accuracy: 87.33333333333333%
+Best eval acc: 0.8756666666666667
+Train accuracy: 86.86774193548386%
+Eval accuracy: 85.85000000000001%
+Best eval acc: 0.8756666666666667
+Finished training. Re-loading and evaluating model from disk.
+Loading model: MyCNN_VMASK
+Test accuracy accuracy: 87.0%
+Error: could not save tokenizer Tokenizer(vocabulary_size=60955, model=WordLevel, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], lowercase=True, unicode_normalizer=None) to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/.
+Wrote README to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/README.md.
+Wrote final training args to /home/krishna/flat2/flat2/CNN_LSTM/outputs/training/cnn_mask-ag-adv_reg-/train_args.json.
